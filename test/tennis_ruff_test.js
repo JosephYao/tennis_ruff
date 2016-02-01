@@ -14,6 +14,9 @@ var tennis = {
 	isCalled: false,
 	senderWin: function() {
 		this.isCalled = true;
+	},
+	score: function () {
+		return 'Score';
 	}
 };
 
@@ -32,6 +35,11 @@ module.exports = {
     	controller.senderWin();
 
     	assert.equal(tennis.isCalled, true);
+    },
+    'test left button should return current score': function () {
+    	controller.tennis = tennis;
+
+    	assert.equal(controller.senderWin(), 'Score');
     }
 };
 
