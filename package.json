@@ -5,7 +5,8 @@
     "author": "",
     "ruff": {
         "dependencies": {
-            "ruff-mbd-v1": "*"
+            "ruff-mbd-v1": "*",
+            "lcd1602-pcf8574-hd44780": "0.1.1"
         }
     }
 }
